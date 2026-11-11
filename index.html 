@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusHub | College Portal</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+      color: #172554;
+    }
+    header {
+      background: #102b59;
+      color: white;
+      padding: 22px;
+    }
+    header h1 { margin: 0; }
+    header p { margin-bottom: 0; color: #cbd5e1; }
+    nav {
+      background: white;
+      padding: 15px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px #0001;
+    }
+    nav a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main { padding: 22px; max-width: 1000px; margin: auto; }
+    .welcome {
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #0001;
+    }
+    .card h3 { color: #1d4ed8; margin-top: 0; }
+    .number { font-size: 28px; font-weight: bold; }
+    .notice {
+      background: #dbeafe;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 22px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎓 CampusHub</h1>
+    <p>Your College. Your Future. Your Campus.</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#academics">Academics</a>
+    <a href="#services">Student Services</a>
+  </nav>
+  <main id="home">
+    <section class="welcome">
+      <h2>Welcome to CampusHub</h2>
+      <p>Your central college portal for learning, academic information and campus services.</p>
+      <p><strong>Learn. Connect. Succeed.</strong></p>
+    </section>
+    <h2 id="dashboard">Campus Overview</h2>
+    <section class="cards">
+      <div class="card">
+        <h3>Students</h3>
+        <div class="number">--</div>
+        <p>Student records</p>
+      </div>
+      <div class="card">
+        <h3>Lecturers</h3>
+        <div class="number">--</div>
+        <p>Teaching staff</p>
+      </div>
+      <div class="card">
+        <h3>Courses</h3>
+        <div class="number">--</div>
+        <p>Academic programmes</p>
+      </div>
+      <div class="card">
+        <h3>Notices</h3>
+        <div class="number">--</div>
+        <p>Campus announcements</p>
+      </div>
+    </section>
+    <section class="notice" id="academics">
+      <h3>📢 Campus Announcements</h3>
+      <p>Welcome! Important college updates will appear here.</p>
+    </section>
+    <section class="notice" id="services">
+      <h3>📚 Student Services</h3>
+      <p>Academic records, attendance, examinations, library and student support.</p>
+    </section>
+  </main>
+  <footer>© 2026 CampusHub. College Management Portal.</footer>
+</body>
+</html>
